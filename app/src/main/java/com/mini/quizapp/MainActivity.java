@@ -1,6 +1,7 @@
 package com.mini.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -20,15 +21,27 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup;
     TextView question;
     RadioButton rb1,rb2,rb3,rb4;
-    public String ques[]={"Which is a Programming Language?",
-            "In COMAL language program, after name of procedure parameters must be in?",
-            "Programming language COBOL works best for use in?"};
-    public String choices[][]={{"HTML", "CSS", "Vala", "PHP"},
-            {"Punction Marks", "Back-Slash", "Brackets", "Semi Colon"},
-            {"Siemens Applications", "Student Applications", "Social Applications", "Commercial Applications"}};
-    public String correctAnswer[]={ "PHP",
-            "Brackets",
-            "Commercial Applications"};
+    public String ques[]={"Which method can be defined only once in a program?",
+            "Which of these is not a bitwise operator?",
+            "Which keyword is used by method to refer to the object that invoked it?",
+            "Which of these keywords is used to define interfaces in Java?",
+            "Which of these access specifiers can be used for an interface?",
+            "Which of the following is correct way of importing an entire package ‘pkg’?",
+            "What is the return type of Constructors?",
+            "Which of the following package stores all the standard java classes?",
+            "Which of these method of class String is used to compare two String objects for their equality?",
+            "An expression involving byte, int, & literal numbers is promoted to which of these?"};
+    public String choices[][]={{ "finalize method","main method","static method","private method"},
+            {"&","&=","|=","<="},
+            {"import","this","catch","abstract"},
+            {"Interface","interface","intf","Intf"},
+            {"public","protected","private","All of the mentioned"},
+            {"Import pkg.","import pkg.*","Import pkg.*","import pkg."},
+            {"int","float","void","None of the mentioned"},
+            {"lang","java","util","java.packages"},
+            {"equals()","Equals()","isequal()","Isequal()"},
+            {"int","long","byte","float"}};
+    public String correctAnswer[]={ "main method","<=","this","interface","public","import pkg.*","None of the mentioned","java","equals()","int"};
 
     int flag=0;
     public static int marks=0,correct=0,wrong=0;
@@ -43,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         submit=findViewById(R.id.submit);
         radioGroup=findViewById(R.id.groupradio);
         quit = findViewById(R.id.quit);
@@ -56,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         rb1.setText(choices[flag][0]);
         rb2.setText(choices[flag][1]);
         rb3.setText(choices[flag][2]);
-        rb3.setText(choices[flag][3]);
+        rb4.setText(choices[flag][3]);
 
         radioGroup.clearCheck();
         radioGroup.setOnCheckedChangeListener(
