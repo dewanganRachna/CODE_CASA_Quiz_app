@@ -45,10 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
     int flag=0;
     public static int marks=0,correct=0,wrong=0;
-//    private Questions questions=new Questions();
-//    private String answer;
-//    private int questionLength = questions.questions.length;
-//    Random random;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -154,18 +150,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Add the Listener to the Submit Button
-//        clear.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v)
-//            {
-//
-//                // Clear RadioGroup
-//                // i.e. reset all the Radio Buttons
-//                radioGroup.clearCheck();
-//            }
-//        });
+
         quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
