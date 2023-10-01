@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button submit,quit;
     RadioGroup radioGroup;
-    TextView question;
+    TextView question,queno;
     RadioButton rb1,rb2,rb3,rb4;
     public String ques[]={"Which method can be defined only once in a program?",
             "Which of these is not a bitwise operator?",
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        queno=findViewById(R.id.queNO);
         submit=findViewById(R.id.submit);
         radioGroup=findViewById(R.id.groupradio);
         quit = findViewById(R.id.quit);
@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         rb3=findViewById(R.id.radio_3);
         rb4=findViewById(R.id.radio_4);
 
+        queno.setText(Integer.toString(flag+1));
         question.setText(ques[flag]);
         rb1.setText(choices[flag][0]);
         rb2.setText(choices[flag][1]);
@@ -136,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
 //                            .show();
 
                     if(flag<ques.length){
+                        queno.setText(Integer.toString(flag+1));
                         question.setText(ques[flag]);
                         rb1.setText(choices[flag][0]);
                         rb2.setText(choices[flag][1]);

@@ -19,22 +19,22 @@ public class Result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        res1=findViewById(R.id.res1);
-        res2=findViewById(R.id.res2);
+//        res1=findViewById(R.id.res1);
+//        res2=findViewById(R.id.res2);
         res3=findViewById(R.id.res3);
         restart=findViewById(R.id.restart);
 
-        StringBuilder sb=new StringBuilder();
-        sb.append("Correct answers"+MainActivity.correct+"\n");
-
-        StringBuilder sb2=new StringBuilder();
-        sb2.append("Wrong answers"+MainActivity.wrong+"\n");
+//        StringBuilder sb=new StringBuilder();
+//        sb.append("Correct answers "+MainActivity.correct+"\n");
+//
+//        StringBuilder sb2=new StringBuilder();
+//        sb2.append("Wrong answers "+MainActivity.wrong+"\n");
 
         StringBuilder sb3=new StringBuilder();
-        sb3.append("Final Score"+MainActivity.correct+"\n");
+        sb3.append("Your Score is "+MainActivity.correct+" out of 10"+"\n");
 
-        res1.setText(sb);
-        res2.setText(sb2);
+//        res1.setText(sb);
+//        res2.setText(sb2);
         res3.setText(sb3);
 
         MainActivity.correct=0;

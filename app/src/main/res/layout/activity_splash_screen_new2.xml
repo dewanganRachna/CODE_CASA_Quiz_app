@@ -5,19 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".SplashScreenNew">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/quizimg"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO QUIZ APP !"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/startQuiz"
         android:background="@drawable/buttonbkg"
         android:backgroundTint="@color/teal_200"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
         android:text="Start Quiz"

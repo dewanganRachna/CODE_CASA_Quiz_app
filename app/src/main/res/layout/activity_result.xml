@@ -4,61 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Result">
 
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:cardElevation="20dp"
-        app:cardCornerRadius="30dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/bordercolor">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="large Text"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:id="@+id/res1"
-                android:textStyle="bold"
-                android:textSize="28dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="large Text"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:id="@+id/res2"
-                android:textStyle="bold"
-                android:textSize="28dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="large Text"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:id="@+id/res3"
-                android:textStyle="bold"
-                android:textSize="28dp"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Restart"
-                android:background="@drawable/buttonbkg"
-                android:id="@+id/restart"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:src="@drawable/lights"/>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            app:cardElevation="20dp"-->
+<!--            app:cardCornerRadius="30dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@drawable/bordercolor">-->
 
-        </LinearLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/res1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:fontFamily="sans-serif"-->
+<!--                    android:text="large Text "-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="28dp"-->
+<!--                    android:textStyle="bold" />-->
+        <TextView
+            android:id="@+id/res2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/akronim"
+            android:text="Congratulations"
+            android:textColor="@color/purple_200"
+            android:textSize="55dp"
+            android:textStyle="italic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="large Text "
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/res3"
+                    android:textStyle="bold"
+                    android:textSize="28dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restart"
+                    android:background="@drawable/buttonbkg"
+                    android:id="@+id/restart"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"/>
 
-    </androidx.cardview.widget.CardView>
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+    </LinearLayout>
+
 
 </RelativeLayout>
