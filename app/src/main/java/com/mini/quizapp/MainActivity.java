@@ -127,10 +127,6 @@ public class MainActivity extends AppCompatActivity {
                     flag++;
                     // Now display the value of selected item
                     // by the Toast message
-//                    Toast.makeText(MainActivity.this,
-//                                    radioButton.getText(),
-//                                    Toast.LENGTH_SHORT)
-//                            .show();
 
                     if(flag<ques.length){
                         queno.setText(Integer.toString(flag+1));
