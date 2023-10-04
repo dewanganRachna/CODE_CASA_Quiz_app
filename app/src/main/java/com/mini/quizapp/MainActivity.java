@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                         rb1.setText(choices[flag][0]);
                         rb2.setText(choices[flag][1]);
                         rb3.setText(choices[flag][2]);
-                        rb3.setText(choices[flag][3]);
+                        rb4.setText(choices[flag][3]);
                     }
                     else{
                         marks=correct;
